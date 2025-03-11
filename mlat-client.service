@@ -1,0 +1,12 @@
+[Unit]
+Description=mlat-client: Multi-lateration for ADS-B signals
+[Service]
+Type=simple
+WorkingDirectory=/home/livelink/mlat-client
+User=livelink
+ExecStart=/home/livelink/mlat-client/start.sh
+Restart=always
+RestartSec=10
+[Install]
+WantedBy=multi-user.target
+
